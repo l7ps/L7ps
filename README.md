@@ -13,9 +13,9 @@
 
 ## ✨ Sobre mim
 
-Olá! Sou apaixonada por tecnologia e inovação. Atualmente curso **Análise e Desenvolvimento de Sistemas** e trabalho como **Analista de Suporte Computacional**, unindo teoria, prática e criatividade para resolver problemas reais com soluções eficientes.
+Olá! Sou apaixonada por tecnologia, inovação e design. Atualmente curso **Análise e Desenvolvimento de Sistemas** e trabalho como **Analista de Suporte Computacional**, unindo teoria, prática e criatividade para resolver problemas reais com soluções eficientes.
 
-Me aventuro também com **WordPress e criação de websites**, especialmente no que envolve identidade visual e usabilidade. Ainda estou explorando mas adoro aprender algo novo todos os dias!
+Me aventuro também com **WordPress e criação de websites**. Ainda estou explorando.
 
 > **Adoro transformar desafios em projetos reais. Se você tiver uma ideia fora da caixa, pode me chamar:**  
 > **✨ Vamos criar algo incrível juntos!**
@@ -25,7 +25,7 @@ Me aventuro também com **WordPress e criação de websites**, especialmente no 
 ## 🛠️ Tecnologias e Ferramentas
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,py,java,react,vue,nodejs,nextjs,postgres,mysql,firebase,bootstrap,figma,git,github,excel,wordpress" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,py,java,react,vue,nodejs,nextjs,postgres,mysql,firebase,bootstrap,git,github,wordpress" />
 </p>
 
 ---
@@ -64,11 +64,27 @@ Plataforma interna para controle de ativos e permissões. Ideal para rastrear di
 
 ---
 
-### 🧠 **Optimos TI** *(em desenvolvimento)*  
+### 🧠 **Optimus TI** *(em desenvolvimento)*  
 Gerenciador de infraestrutura de TI com foco em ativos, chamados, softwares, custos e KPIs.
 
 > **Tecnologias**: HTML, CSS, JavaScript, Node.js, MySQL  
 > **Destaques previstos**: Inventário, abertura de chamados, controle de softwares e dashboard gerencial.
+
+---
+
+### ✂️ **[pdf-splitter](https://github.com/l7ps/pdf-splitter)**  
+Aplicativo simples em Python para dividir arquivos PDF em partes menores e gerar log em planilha Excel.
+
+> **Tecnologias**: Python, PyPDF, OpenPyXL  
+> **Destaques**: Interface funcional, registro de separações, automação de documentos.
+
+---
+
+### 🩺 **[GuiasMaker](https://github.com/l7ps/GuiasMaker)** *(em desenvolvimento)*  
+Sistema para geração e emissão de guias médicas personalizadas com cadastro de clínicas, médicos e especialidades.
+
+> **Tecnologias**: HTML, CSS, JavaScript, Python (backend em definição)  
+> **Destaques previstos**: Criação de guias automatizadas, histórico por paciente, impressão padronizada.
 
 ---
 
@@ -83,10 +99,6 @@ Gerenciador de infraestrutura de TI com foco em ativos, chamados, softwares, cus
 | **GitHub**     | [github.com/l7ps](https://github.com/l7ps)                           |
 
 ---
-
-<p align="center">
-  <img src="https://media.giphy.com/media/kH8j0FftC1b0f5U5Jf/giphy.gif" width="150" alt="Dev Girl Animated" />
-</p>
 
 <p align="center" style="font-size:1.05rem">
   <i>Desenvolvido com café, criatividade e muito código. ☕</i>
