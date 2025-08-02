@@ -1,0 +1,534 @@
+{
+  "version": "1.0.0",
+  "title": "MarketPro - Agência de Marketing Digital",
+  "type": "page",
+  "author": "MarketPro Template",
+  "generator": "Elementor",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "content_width": "full_width",
+        "gap": "no",
+        "height": "min-height",
+        "min_height": {
+          "unit": "vh",
+          "size": 100
+        },
+        "background_background": "gradient",
+        "background_color": "#667eea",
+        "background_color_b": "#764ba2",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135
+        },
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,0,0,0.3)",
+        "background_overlay_blend_mode": "normal"
+      },
+      "elements": [
+        {
+          "id": "hero-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_position": "middle",
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Transformamos Sua <span style=\"background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;\">Marca</span> em um <span style=\"background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;\">Sucesso Digital</span>",
+                "size": "xl",
+                "header_size": "h1",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "rem",
+                  "size": 3.75
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1
+                },
+                "title_color": "#ffffff",
+                "margin": {
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "24",
+                  "left": "0",
+                  "unit": "px"
+                }
+              }
+            },
+            {
+              "id": "hero-description",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Somos especialistas em marketing digital, criando estratégias personalizadas que geram resultados reais e aceleram o crescimento do seu negócio.",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "rem",
+                  "size": 1.25
+                },
+                "typography_font_weight": "400",
+                "text_color": "rgba(255,255,255,0.9)",
+                "margin": {
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "48",
+                  "left": "0",
+                  "unit": "px"
+                }
+              }
+            },
+            {
+              "id": "hero-buttons",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Nossos Serviços",
+                "link": {
+                  "url": "#services"
+                },
+                "size": "lg",
+                "button_type": "primary",
+                "background_color": "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
+                "border_radius": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_weight": "500",
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 10,
+                  "blur": 15,
+                  "spread": -3,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "hover_animation": "grow"
+              }
+            },
+            {
+              "id": "hero-stats",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "layout": "boxed",
+                "gap": "default",
+                "margin": {
+                  "top": "64",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "unit": "px"
+                }
+              },
+              "elements": [
+                {
+                  "id": "stat-1",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "text_align": "center"
+                  },
+                  "elements": [
+                    {
+                      "elType": "widget",
+                      "widgetType": "counter",
+                      "settings": {
+                        "ending_number": 200,
+                        "prefix": "",
+                        "suffix": "+",
+                        "duration": 2000,
+                        "number_color": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+                        "title": "Clientes Atendidos",
+                        "title_color": "rgba(255,255,255,0.8)"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "stat-2",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "text_align": "center"
+                  },
+                  "elements": [
+                    {
+                      "elType": "widget",
+                      "widgetType": "counter",
+                      "settings": {
+                        "ending_number": 5,
+                        "prefix": "",
+                        "suffix": "M+",
+                        "duration": 2000,
+                        "number_color": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+                        "title": "Leads Gerados",
+                        "title_color": "rgba(255,255,255,0.8)"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "stat-3",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "text_align": "center"
+                  },
+                  "elements": [
+                    {
+                      "elType": "widget",
+                      "widgetType": "counter",
+                      "settings": {
+                        "ending_number": 300,
+                        "prefix": "",
+                        "suffix": "%",
+                        "duration": 2000,
+                        "number_color": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+                        "title": "ROI Médio",
+                        "title_color": "rgba(255,255,255,0.8)"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "stat-4",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "text_align": "center"
+                  },
+                  "elements": [
+                    {
+                      "elType": "widget",
+                      "widgetType": "counter",
+                      "settings": {
+                        "ending_number": 5,
+                        "prefix": "",
+                        "suffix": " Anos",
+                        "duration": 2000,
+                        "number_color": "linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)",
+                        "title": "de Experiência",
+                        "title_color": "rgba(255,255,255,0.8)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "gap": "default",
+        "padding": {
+          "top": "96",
+          "right": "0",
+          "bottom": "96",
+          "left": "0",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "about-content-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "content_position": "middle"
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Sua Parceira Estratégica no <span style=\"background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;\">Marketing Digital</span>",
+                "size": "large",
+                "header_size": "h2"
+              }
+            },
+            {
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Com mais de 5 anos de experiência no mercado digital, a MarketPro é uma agência especializada em transformar negócios através de estratégias inovadoras e resultados mensuráveis."
+              }
+            }
+          ]
+        },
+        {
+          "id": "about-image-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "assets/images/about-hero.jpg"
+                },
+                "image_border_radius": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "image_box_shadow_box_shadow_type": "yes",
+                "image_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 20,
+                  "blur": 25,
+                  "spread": -5,
+                  "color": "rgba(0,0,0,0.1)"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "gap": "default",
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": {
+          "top": "96",
+          "right": "0",
+          "bottom": "96",
+          "left": "0",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "services-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Soluções Completas em <span style=\"background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;\">Marketing Digital</span>",
+                "size": "large",
+                "header_size": "h2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact-section",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "gap": "default",
+        "background_background": "classic",
+        "background_color": "#f9fafb",
+        "padding": {
+          "top": "96",
+          "right": "0",
+          "bottom": "96",
+          "left": "0",
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "contact-form-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 66
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "form_name": "Contato MarketPro",
+                "form_fields": [
+                  {
+                    "custom_id": "name",
+                    "field_type": "text",
+                    "field_label": "Nome Completo",
+                    "placeholder": "Seu nome completo",
+                    "required": true,
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "email",
+                    "field_type": "email",
+                    "field_label": "E-mail",
+                    "placeholder": "seu@email.com",
+                    "required": true,
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "phone",
+                    "field_type": "tel",
+                    "field_label": "Telefone",
+                    "placeholder": "(11) 99999-9999",
+                    "required": true,
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "company",
+                    "field_type": "text",
+                    "field_label": "Empresa",
+                    "placeholder": "Nome da sua empresa",
+                    "required": false,
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "service",
+                    "field_type": "select",
+                    "field_label": "Serviço de Interesse",
+                    "field_options": "Google Ads\nFacebook & Instagram Ads\nSEO\nEmail Marketing\nAnalytics & BI\nDesenvolvimento Web\nConsultoria Completa",
+                    "required": false,
+                    "width": "100"
+                  },
+                  {
+                    "custom_id": "message",
+                    "field_type": "textarea",
+                    "field_label": "Mensagem",
+                    "placeholder": "Conte-nos sobre seu projeto e objetivos...",
+                    "required": true,
+                    "width": "100",
+                    "rows": 5
+                  }
+                ],
+                "button_text": "Solicitar Análise Gratuita",
+                "button_size": "lg",
+                "button_background_color": "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
+                "submit_actions": ["email"],
+                "email_to": "contato@marketpro.com.br",
+                "email_subject": "Nova solicitação de contato - MarketPro",
+                "email_content": "Nova mensagem recebida:\n\nNome: [field id=\"name\"]\nEmail: [field id=\"email\"]\nTelefone: [field id=\"phone\"]\nEmpresa: [field id=\"company\"]\nServiço: [field id=\"service\"]\n\nMensagem:\n[field id=\"message\"]"
+              }
+            }
+          ]
+        },
+        {
+          "id": "contact-info-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "Av. Paulista, 1000 - Sala 1001\nSão Paulo, SP - 01310-100",
+                    "selected_icon": {
+                      "value": "fas fa-map-marker-alt",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "(11) 9 9999-9999\n(11) 3333-3333",
+                    "selected_icon": {
+                      "value": "fas fa-phone",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "contato@marketpro.com.br\ncomercial@marketpro.com.br",
+                    "selected_icon": {
+                      "value": "fas fa-envelope",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "Segunda à Sexta: 9h às 18h\nSábado: 9h às 13h",
+                    "selected_icon": {
+                      "value": "fas fa-clock",
+                      "library": "fa-solid"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "post_title": "MarketPro - Agência de Marketing Digital",
+    "post_excerpt": "Template profissional para agência de marketing digital com design moderno e otimizado para conversão",
+    "hide_title": "yes",
+    "page_template": "elementor_header_footer"
+  },
+  "elementor_settings": {
+    "custom_css": "@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');\n\n:root {\n  --primary-color: #3b82f6;\n  --primary-dark: #2563eb;\n  --secondary-color: #8b5cf6;\n  --accent-color: #f59e0b;\n  --dark-color: #1f2937;\n  --gray-color: #6b7280;\n  --light-color: #f9fafb;\n  --white-color: #ffffff;\n  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);\n  --gradient-secondary: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);\n}\n\nbody {\n  font-family: 'Poppins', sans-serif;\n}\n\n.elementor-button {\n  background: var(--gradient-primary) !important;\n  border: none !important;\n  transition: all 0.3s ease !important;\n}\n\n.elementor-button:hover {\n  transform: translateY(-2px) !important;\n  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;\n}\n\n.gradient-text {\n  background: var(--gradient-primary);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n}",
+    "viewport_md": 768,
+    "viewport_lg": 1025,
+    "container_width": {
+      "unit": "px",
+      "size": 1200
+    },
+    "space_between_widgets": {
+      "unit": "px",
+      "size": 20
+    },
+    "page_title_selector": "h1.entry-title",
+    "stretched_section_container": ""
+  },
+  "meta": {
+    "created": "2024-01-01T00:00:00Z",
+    "modified": "2024-01-01T00:00:00Z",
+    "description": "Template profissional para agência de marketing digital criado especificamente para WordPress com Elementor Pro. Inclui seções otimizadas para conversão, design responsivo e integração com formulários de contato.",
+    "tags": ["marketing", "agência", "digital", "elementor", "wordpress", "template", "profissional"],
+    "requirements": {
+      "wordpress": "5.0+",
+      "elementor": "3.0+",
+      "elementor_pro": "3.0+",
+      "php": "7.4+"
+    },
+    "features": [
+      "Design responsivo",
+      "Otimizado para SEO",
+      "Formulários de contato integrados",
+      "Animações suaves",
+      "Tipografia moderna",
+      "Cores personalizáveis",
+      "Fácil importação",
+      "Documentação completa"
+    ]
+  }
+}
