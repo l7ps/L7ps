@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Vida Cotidiana Parceiros</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link href="/css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-chart-line me-2"></i>
+                Dashboard Vida Cotidiana
+            </a>
+            <div class="navbar-nav ms-auto">
+                <span class="navbar-text me-3">
+                    <i class="fas fa-clock me-1"></i>
+                    <span id="lastUpdate">Carregando...</span>
+                </span>
+                <button class="btn btn-outline-light btn-sm" onclick="forceSync()">
+                    <i class="fas fa-sync-alt me-1"></i>
+                    Sincronizar
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <!-- Status da Sincronização -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h6 class="card-title mb-1">Status da Sincronização</h6>
+                                <div id="syncStatus" class="d-flex align-items-center">
+                                    <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                                    <span>Verificando status...</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-end">
+                                <div id="syncProgress" class="progress" style="height: 8px; display: none;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                         role="progressbar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards de Estatísticas -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="stat-icon bg-primary bg-gradient mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h2 class="h4 mb-1" id="totalParceiros">-</h2>
+                        <p class="text-muted mb-0">Total de Parceiros</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="stat-icon bg-success bg-gradient mb-3">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2 class="h4 mb-1" id="parceirosAtivos">-</h2>
+                        <p class="text-muted mb-0">Parceiros Ativos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="stat-icon bg-warning bg-gradient mb-3">
+                            <i class="fas fa-pause-circle"></i>
+                        </div>
+                        <h2 class="h4 mb-1" id="parceirosInativos">-</h2>
+                        <p class="text-muted mb-0">Parceiros Inativos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="stat-icon bg-info bg-gradient mb-3">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <h2 class="h4 mb-1" id="parceirosRecentes">-</h2>
+                        <p class="text-muted mb-0">Novos (30 dias)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gráficos e Tabelas -->
+        <div class="row">
+            <!-- Gráfico de Distribuição por Estado -->
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Distribuição por Estado
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="estadoChart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtros e Busca -->
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-search me-2"></i>
+                            Busca e Filtros
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="searchForm">
+                            <div class="mb-3">
+                                <label for="searchNome" class="form-label">Nome do Parceiro</label>
+                                <input type="text" class="form-control" id="searchNome" placeholder="Digite o nome...">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="searchCidade" class="form-label">Cidade</label>
+                                    <input type="text" class="form-control" id="searchCidade" placeholder="Digite a cidade...">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="searchEstado" class="form-label">Estado</label>
+                                    <select class="form-select" id="searchEstado">
+                                        <option value="">Todos os estados</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="searchStatus" class="form-label">Status</label>
+                                <select class="form-select" id="searchStatus">
+                                    <option value="">Todos</option>
+                                    <option value="ativo">Ativo</option>
+                                    <option value="inativo">Inativo</option>
+                                </select>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex">
+                                <button type="submit" class="btn btn-primary flex-fill">
+                                    <i class="fas fa-search me-1"></i>
+                                    Buscar
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary" onclick="clearFilters()">
+                                    <i class="fas fa-times me-1"></i>
+                                    Limpar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabela de Parceiros -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-table me-2"></i>
+                            Lista de Parceiros
+                        </h5>
+                        <div class="btn-group">
+                            <button class="btn btn-outline-primary btn-sm" onclick="exportData('json')">
+                                <i class="fas fa-download me-1"></i>
+                                JSON
+                            </button>
+                            <button class="btn btn-outline-success btn-sm" onclick="exportData('csv')">
+                                <i class="fas fa-file-csv me-1"></i>
+                                CSV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>CPF/CNPJ</th>
+                                        <th>Email</th>
+                                        <th>Cidade</th>
+                                        <th>Estado</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="parceirosTable">
+                                    <tr>
+                                        <td colspan="7" class="text-center py-4">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Carregando...</span>
+                                            </div>
+                                            <div class="mt-2">Carregando dados...</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Paginação -->
+                        <nav aria-label="Navegação de páginas">
+                            <ul class="pagination justify-content-center" id="pagination">
+                                <!-- Será preenchido dinamicamente -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logs de Sincronização -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-history me-2"></i>
+                            Histórico de Sincronizações
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Data/Hora</th>
+                                        <th>Operação</th>
+                                        <th>Status</th>
+                                        <th>Registros</th>
+                                        <th>Mensagem</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="syncLogsTable">
+                                    <!-- Será preenchido dinamicamente -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Detalhes do Parceiro -->
+    <div class="modal fade" id="parceiroModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-user me-2"></i>
+                        Detalhes do Parceiro
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="parceiroModalBody">
+                    <!-- Conteúdo será carregado dinamicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
