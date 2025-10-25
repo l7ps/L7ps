@@ -25,14 +25,14 @@ Me aventuro também com **WordPress e criação de websites**. Ainda estou explo
 ## 🛠️ Tecnologias e Ferramentas
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,py,java,nodej,postgres,mysql,git,wordpress" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,py,java,nodejs,postgres,mysql,git,wordpress" />
 </p>
 
 ---
 
 ## Alguns Projetos
 
-### 📦 **[DataStock](https://github.com/l7ps/DataStockv1)** *(em andamento)*  
+### 📦 **[DataStock]** *(em andamento)*  
 Sistema completo de gestão de estoque com dashboard visual, controle de solicitações, movimentações, inventário e geração de relatórios CSV.
 
 > **Tecnologias**: HTML, CSS, JavaScript, Next.js, MySQL  
@@ -56,7 +56,7 @@ Plataforma interna para controle de ativos e permissões. Ideal para rastrear di
 
 ---
 
-### ✂️ **[pdf-splitter](https://github.com/l7ps/pdf-splitter)**  
+### ✂️ **[pdf-splitter]**  
 Aplicativo simples em Python para dividir arquivos PDF em partes menores e gerar log em planilha Excel.
 
 > **Tecnologias**: Python, PyPDF, OpenPyXL  
