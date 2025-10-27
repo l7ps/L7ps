@@ -1,0 +1,91 @@
+{
+  "name": "marketpro-template",
+  "version": "1.0.0",
+  "description": "Template profissional para agência de marketing digital - WordPress com Elementor Pro",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=index.html",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o assets/css/style.min.css assets/css/style.css",
+    "minify:js": "uglifyjs assets/js/script.js -o assets/js/script.min.js -c -m",
+    "optimize:images": "imagemin assets/images/*.{jpg,png,gif} --out-dir=assets/images/optimized --plugin=imagemin-mozjpeg --plugin=imagemin-pngquant",
+    "validate:html": "html-validate index.html",
+    "lint:css": "stylelint assets/css/*.css",
+    "lint:js": "eslint assets/js/*.js",
+    "test": "npm run validate:html && npm run lint:css && npm run lint:js",
+    "deploy": "npm run build && npm run test",
+    "preview": "live-server --port=8080 --open=index.html --no-browser"
+  },
+  "keywords": [
+    "template",
+    "marketing",
+    "agencia",
+    "wordpress",
+    "elementor",
+    "responsivo",
+    "profissional",
+    "landing-page",
+    "site",
+    "digital",
+    "conversion",
+    "seo"
+  ],
+  "author": {
+    "name": "MarketPro Team",
+    "email": "dev@marketpro.com.br",
+    "url": "https://marketpro.com.br"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marketpro/template-agencia"
+  },
+  "bugs": {
+    "url": "https://github.com/marketpro/template-agencia/issues"
+  },
+  "homepage": "https://marketpro.com.br/template",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.0",
+    "uglify-js": "^3.17.0",
+    "live-server": "^1.2.2",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "html-validate": "^7.13.0",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "eslint": "^8.35.0",
+    "eslint-config-standard": "^17.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "config": {
+    "template": {
+      "name": "MarketPro",
+      "version": "1.0.0",
+      "wordpress_min": "5.0",
+      "elementor_min": "3.0",
+      "elementor_pro_required": true,
+      "php_min": "7.4"
+    }
+  },
+  "files": [
+    "index.html",
+    "assets/",
+    "elementor-template.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  }
+}
