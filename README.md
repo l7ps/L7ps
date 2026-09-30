@@ -1,82 +1,159 @@
-<h1 align="center" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-  Letícia Pereira
-</h1>
-<p align="center" style="font-size: 1.1rem;">
-  <i>Dev Full Stack em formação | Acadêmica de ADS | Analista de Suporte Computacional</i>
+<div align="center">
+
+# 👋 Olá, eu sou Letícia Pereira
+
+### 💻 Analista de Suporte Computacional · Desenvolvedora em formação
+
+<p>
+Transformando problemas reais em soluções através da tecnologia.
 </p>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="100"/>
-</p>
+<a href="https://github.com/leticia7pereira">
+  <img src="https://img.shields.io/badge/GitHub-08090d?style=for-the-badge&logo=github&logoColor=white">
+</a>
+
+</div>
 
 ---
 
-## ✨ Sobre mim
+## 👩‍💻 Sobre mim
 
-Olá! Sou apaixonada por tecnologia, inovação e design. Atualmente curso **Análise e Desenvolvimento de Sistemas** e trabalho como **Analista de Suporte**, unindo teoria, prática e criatividade para resolver problemas reais com soluções eficientes.
+Sou **Analista de Suporte Computacional** e estudante de **Análise e Desenvolvimento de Sistemas**.
 
-Me aventuro também com **WordPress e criação de websites**. Ainda estou explorando.
+Minha experiência profissional começou no suporte técnico, trabalhando diretamente com sistemas, usuários, bancos de dados, troubleshooting e resolução de problemas.
 
-> **Adoro transformar desafios em projetos reais. Se você tiver uma ideia fora da caixa, pode me chamar:**  
-> **✨ Vamos criar algo incrível juntos!**
+Atualmente estou expandindo essa experiência para o **desenvolvimento de software**, criando projetos próprios, estudando novas tecnologias e transformando problemas do dia a dia em aplicações.
 
----
-
-## 🛠️ Tecnologias e Ferramentas
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,py,java,nodejs,postgres,mysql,git,wordpress" />
-</p>
+📍 Santa Catarina, Brasil  
+🎓 Análise e Desenvolvimento de Sistemas  
+💻 Suporte Técnico & Sistemas  
+📚 Historiadora por amor  
+☕ Café, livros e código
 
 ---
 
-## Alguns Projetos
+## 🛠️ Tecnologias
 
-### 📦 **[DataStock]** *(em andamento)*  
-Sistema completo de gestão de estoque com dashboard visual, controle de solicitações, movimentações, inventário e geração de relatórios CSV.
+<div align="center">
 
-> **Tecnologias**: HTML, CSS, JavaScript, Next.js, MySQL  
-> **Destaques**: App `.msi`, múltiplos estoques, histórico de produtos, visualização por unidade e filtros avançados.
+### Linguagens
 
----
+<img src="https://skillicons.dev/icons?i=html,css,js,php,python" />
 
-### 📄 **Sistema de Controle de Versões Documentais** *(em desenvolvimento)*  
-Aplicação local para controle de documentos e versões com rastreabilidade, segurança e backup local.
+### Banco de dados & ferramentas
 
-> **Tecnologias**: HTML, CSS (Bootstrap), JavaScript  
-> **Destaques**: Armazenamento em `.txt/.json`, dashboard por setor, usuários e setores.
+<img src="https://skillicons.dev/icons?i=mysql,sqlite,git,github,vscode" />
+
+</div>
 
 ---
 
-### 🔐 **SGAE - Acessos e Equipamentos** *(em desenvolvimento)*  
-Plataforma interna para controle de ativos e permissões. Ideal para rastrear dispositivos, acessos e uso por setor.
+# 🚀 Projetos
 
-> **Tecnologias**: HTML, CSS, JavaScript  
-> **Destaques previstos**: Cadastro de equipamentos, rastreabilidade, painel de controle e relatórios.
+### 📄 Sistema de Controle de Versões Documentais
 
----
+Aplicação local para controle de documentos e versões, com foco em rastreabilidade, segurança e backup local.
 
-### ✂️ **[pdf-splitter]**  
-Aplicativo simples em Python para dividir arquivos PDF em partes menores e gerar log em planilha Excel.
+**Tecnologias**
 
-> **Tecnologias**: Python, PyPDF, OpenPyXL  
-> **Destaques**: Interface funcional, registro de separações, automação de documentos.
+`HTML` `CSS` `Bootstrap` `JavaScript`
 
----
+**Destaques**
 
-
-## Contato e Redes
-
-| Rede       | Link                                                                 |
-|------------|----------------------------------------------------------------------|
-| **Email**      | leticia7pereira@gmail.com                                             |
-| **LinkedIn**   | [linkedin.com/in/leticia7pereira](https://www.linkedin.com/in/leticia7pereira?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
-| **Instagram**  | [@leticia7pereira](https://www.instagram.com/leticia7pereira)         |
-| **Skoob**      | [@leticia7pereira](https://www.skoob.com.br/usuario/leticia7pereira) |
-| **GitHub**     | [github.com/l7ps](https://github.com/l7ps)                           |
+- 📁 Controle de documentos
+- 🔄 Versionamento
+- 🏢 Organização por setor
+- 👥 Usuários e setores
+- 📊 Dashboard
+- 💾 Backup local
+- 📄 Armazenamento em `.txt` / `.json`
 
 ---
 
-<p align="center" style="font-size:1.05rem">
-  <i>Desenvolvido com café, criatividade e muito código. ☕</i>
-</p>
+### 🔐 SGAE — Acessos e Equipamentos
+
+Plataforma para controle de ativos e permissões, criada para rastrear equipamentos, acessos e utilização por setor.
+
+**Tecnologias**
+
+`HTML` `CSS` `JavaScript`
+
+**Destaques**
+
+- 💻 Cadastro de equipamentos
+- 🔐 Controle de acessos
+- 🏢 Organização por setor
+- 🔎 Rastreabilidade
+- 📊 Painel de controle
+- 📑 Relatórios
+
+---
+
+### ✂️ PDF Splitter
+
+Aplicativo desenvolvido em Python para dividir arquivos PDF em partes menores e registrar as separações em uma planilha Excel.
+
+**Tecnologias**
+
+`Python` `PyPDF` `OpenPyXL`
+
+**Destaques**
+
+- 📄 Divisão automática de PDFs
+- 📊 Registro em Excel
+- ⚙️ Automação de documentos
+- 🖥️ Interface funcional
+
+---
+
+### 🪚 Sistema de Orçamento para Marcenaria
+
+Projeto voltado para gerenciamento de clientes, projetos, materiais, ferragens, custos e elaboração de orçamentos.
+
+**Tecnologias**
+
+`PHP` `MySQL` `HTML` `CSS` `JavaScript`
+
+**Conceitos**
+
+- 👥 Clientes
+- 📐 Projetos
+- 🪵 Materiais
+- 🔩 Ferragens
+- 💰 Custos
+- 📈 Margem de lucro
+- 📄 Orçamentos
+- 📊 Dashboard
+
+---
+
+### 🎮 Futuristic Platform
+
+Jogo de plataforma 2D desenvolvido para navegador, ambientado em um universo futurista de robôs e tecnologia.
+
+**Tecnologias**
+
+`HTML5 Canvas` `JavaScript` `CSS`
+
+---
+
+## 📚 Minha trajetória
+
+```text
+História
+   │
+   ├── Curiosidade
+   │
+   ▼
+Suporte Técnico
+   │
+   ├── Sistemas
+   ├── Banco de Dados
+   ├── Troubleshooting
+   └── Resolução de problemas
+   │
+   ▼
+Análise e Desenvolvimento de Sistemas
+   │
+   ▼
+Desenvolvimento de Software
