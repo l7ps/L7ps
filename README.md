@@ -1,156 +1,66 @@
-<div align="center">
+# 👋 Olá, eu sou Letícia Pereira
 
-# Olá, eu sou Letícia Pereira
+💻 Analista de Suporte Computacional | 🎓 ADS | 🛠️ Desenvolvendo projetos
 
-### 💻 Analista de Suporte Computacional · Desenvolvedora em formação
+Gosto de transformar ideias e problemas reais em soluções através da tecnologia.
 
-
-<a href="https://github.com/leticia7pereira">
-  <img src="https://img.shields.io/badge/GitHub-08090d?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
-</div>
-
----
-
-## 👩‍💻 Sobre mim
-
-Sou **Analista de Suporte Computacional** e estudante de **Análise e Desenvolvimento de Sistemas**.
-
-Minha experiência profissional começou no suporte técnico, trabalhando diretamente com sistemas, usuários, bancos de dados, troubleshooting e resolução de problemas.
-
-Atualmente estou expandindo essa experiência para o **desenvolvimento de software**, criando projetos próprios, estudando novas tecnologias e transformando problemas do dia a dia em aplicações.
-
-📍 Santa Catarina, Brasil  
-🎓 Análise e Desenvolvimento de Sistemas  
-💻 Suporte Técnico & Sistemas  
-📚 Historiadora por amor  
-☕ Café, livros e código
+☕ Entre códigos, cafés e livros.
 
 ---
 
 ## 🛠️ Tecnologias
 
-<div align="center">
-
-### Linguagens
-
-<img src="https://skillicons.dev/icons?i=html,css,js,php,python" />
-
-### Banco de dados & ferramentas
-
-<img src="https://skillicons.dev/icons?i=mysql,sqlite,git,github,vscode" />
-
-</div>
+![HTML](https://img.shields.io/badge/HTML5-0D1117?style=flat&logo=html5&logoColor=E34F26)
+![CSS](https://img.shields.io/badge/CSS3-0D1117?style=flat&logo=css3&logoColor=1572B6)
+![JavaScript](https://img.shields.io/badge/JavaScript-0D1117?style=flat&logo=javascript&logoColor=F7DF1E)
+![Python](https://img.shields.io/badge/Python-0D1117?style=flat&logo=python&logoColor=3776AB)
+![PHP](https://img.shields.io/badge/PHP-0D1117?style=flat&logo=php&logoColor=777BB4)
+![MySQL](https://img.shields.io/badge/MySQL-0D1117?style=flat&logo=mysql&logoColor=4479A1)
+![Git](https://img.shields.io/badge/Git-0D1117?style=flat&logo=git&logoColor=F05032)
 
 ---
 
-# 🚀 Projetos
+## 🚀 Projetos
 
 ### 📄 Sistema de Controle de Versões Documentais
-
-Aplicação local para controle de documentos e versões, com foco em rastreabilidade, segurança e backup local.
-
-**Tecnologias**
+Sistema local para gerenciamento e versionamento de documentos.
 
 `HTML` `CSS` `Bootstrap` `JavaScript`
-
-**Destaques**
-
-- 📁 Controle de documentos
-- 🔄 Versionamento
-- 🏢 Organização por setor
-- 👥 Usuários e setores
-- 📊 Dashboard
-- 💾 Backup local
-- 📄 Armazenamento em `.txt` / `.json`
 
 ---
 
 ### 🔐 SGAE — Acessos e Equipamentos
-
-Plataforma para controle de ativos e permissões, criada para rastrear equipamentos, acessos e utilização por setor.
-
-**Tecnologias**
+Sistema para controle de equipamentos, acessos e organização por setores.
 
 `HTML` `CSS` `JavaScript`
-
-**Destaques**
-
-- 💻 Cadastro de equipamentos
-- 🔐 Controle de acessos
-- 🏢 Organização por setor
-- 🔎 Rastreabilidade
-- 📊 Painel de controle
-- 📑 Relatórios
 
 ---
 
 ### ✂️ PDF Splitter
-
-Aplicativo desenvolvido em Python para dividir arquivos PDF em partes menores e registrar as separações em uma planilha Excel.
-
-**Tecnologias**
+Aplicação para dividir PDFs e gerar registros em Excel.
 
 `Python` `PyPDF` `OpenPyXL`
-
-**Destaques**
-
-- 📄 Divisão automática de PDFs
-- 📊 Registro em Excel
-- ⚙️ Automação de documentos
-- 🖥️ Interface funcional
 
 ---
 
 ### 🪚 Sistema de Orçamento para Marcenaria
-
-Projeto voltado para gerenciamento de clientes, projetos, materiais, ferragens, custos e elaboração de orçamentos.
-
-**Tecnologias**
+Projeto para gerenciamento de clientes, materiais, ferragens e orçamentos.
 
 `PHP` `MySQL` `HTML` `CSS` `JavaScript`
 
-**Conceitos**
+---
 
-- 👥 Clientes
-- 📐 Projetos
-- 🪵 Materiais
-- 🔩 Ferragens
-- 💰 Custos
-- 📈 Margem de lucro
-- 📄 Orçamentos
-- 📊 Dashboard
+## 📚 Atualmente
+
+🎓 Análise e Desenvolvimento de Sistemas  
+💻 Projetos pessoais  
+🧩 Desenvolvimento Web  
+🗄️ Banco de Dados  
 
 ---
 
-### 🎮 Futuristic Platform
+<div align="center">
 
-Jogo de plataforma 2D desenvolvido para navegador, ambientado em um universo futurista de robôs e tecnologia.
+**Código, projetos e ideias em construção. 🚀**
 
-**Tecnologias**
-
-`HTML5 Canvas` `JavaScript` `CSS`
-
----
-
-## 📚 Minha trajetória
-
-```text
-História
-   │
-   ├── Curiosidade
-   │
-   ▼
-Suporte Técnico
-   │
-   ├── Sistemas
-   ├── Banco de Dados
-   ├── Troubleshooting
-   └── Resolução de problemas
-   │
-   ▼
-Análise e Desenvolvimento de Sistemas
-   │
-   ▼
-Desenvolvimento de Software
+</div>
