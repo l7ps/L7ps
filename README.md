@@ -1,12 +1,9 @@
 <div align="center">
 
-# 👋 Olá, eu sou Letícia Pereira
+# Olá, eu sou Letícia Pereira
 
 ### 💻 Analista de Suporte Computacional · Desenvolvedora em formação
 
-<p>
-Transformando problemas reais em soluções através da tecnologia.
-</p>
 
 <a href="https://github.com/leticia7pereira">
   <img src="https://img.shields.io/badge/GitHub-08090d?style=for-the-badge&logo=github&logoColor=white">
