@@ -1,10 +1,6 @@
-# 👋 Olá, eu sou Letícia Pereira
+# Olá, eu sou Leticia!
 
-💻 Analista de Suporte Computacional | 🎓 ADS | 🛠️ Desenvolvendo projetos
-
-Gosto de transformar ideias e problemas reais em soluções através da tecnologia.
-
-☕ Entre códigos, cafés e livros.
+Suporte Computacional | ADS | Desenvolvendo projetos
 
 ---
 
